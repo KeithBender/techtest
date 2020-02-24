@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="./form/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <form class="form" action="./" method="POST">
+        <div class="form-title">
+            Enter Open Position Information
+        </div>
+
+        <div class="form-item">
+            <label for="position-title" class="form-label">Position Title</label>
+            <input type="text" class="form-input form-input-error" name="position-title" id="position-title" />
+            <span class="form-error">Position Title is required.</span>
+        </div>
+        <div class="form-item">
+            <label for="position-location" class="form-label">Position Location</label>
+            <input type="text" class="form-input form-input-error" name="position-location" id="position-location" />
+            <span class="form-error">Position Location is required.</span>
+        </div>
+        <div class="form-item">
+            <label for="department" class="form-label">Department</label>
+            <input type="text" class="form-input form-input-error" name="department" id="department" />
+            <span class="form-error">Department is required.</span>
+        </div>
+
+        <div class="form-item">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-input form-input-error" name="comment" id="comment"></textarea>
+            <span class="form-error">Comment is required.</span>
+        </div>
+
+        <div class="button-wrapper">
+            <button id="cancel">Cancel</button>
+            <div class="right-wrapper">
+                <button id="save">Save & Close</button>
+                <button id="next" type="submit">Next ></button>
+            </div>
+        </div>
+    </form>
+
+    <script src="form/main.js"></script>
+</body>
+
+</html>

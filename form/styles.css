@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 25px;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #dddddd;
+  padding: 0.35em 1.2em;
+  border-radius: 4px;
+  transition: color 0.25s, background 0.25s, border-color 0.25s;
+  outline: none;
+}
+
+button#cancel:hover {
+  cursor: pointer;
+  background: #ffbfbf;
+  border-color: #d50000;
+}
+
+button#save:hover {
+  cursor: pointer;
+  background: #E5FFCC;
+  border-color: #00FF00;
+}
+
+button#next:hover {
+  cursor: pointer;
+}
+
+button#next {
+  background: #4169E1	;
+  color: #ffffff;
+}
+
+.form {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 16px;
+}
+
+.form * {
+  line-height: 1.5;
+}
+
+.form-title {
+  font-size: 2em;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item > *{
+  align-self: flex-start;
+}
+
+.form-label {
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.form-input {
+  -webkit-appearance: none;
+  width: 100%;
+  max-width: 425px;
+
+  padding: 0.7em;
+  font-size: 0.8em;
+
+  /* outline: none; */
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background: #ffffff;
+  
+  transition: background 0.25s, border-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.form-input:focus{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.form-input-error {
+  border-color: #d50000;
+}
+
+.form-error {
+  padding-top: 10px;
+  color: #d50000;
+  font-size: 0.9em;
+  visibility: hidden;
+}
+
+.form-input-error + .form-error {
+  visibility: visible;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 425px;
+  justify-content: space-between;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 50px;
+  max-height: 200px;
+}
